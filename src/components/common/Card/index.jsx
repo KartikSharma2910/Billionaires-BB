@@ -1,7 +1,9 @@
 import TaskCard from "./TaskCard";
+import VoteCard from "./VoteCard";
 
 const CardTypeMapping = {
   TaskCard,
+  VoteCard,
 };
 
 const defaultCardType = "TaskCard";

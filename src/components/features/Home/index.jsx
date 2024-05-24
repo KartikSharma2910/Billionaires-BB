@@ -4,6 +4,8 @@ import Challenges from "./Challenges";
 import Chapters from "./Chapters";
 import MeetParticipants from "./MeetParticipants";
 import ParentsInteraction from "./ParentsInteraction";
+import Prizes from "./Prizes";
+import Voting from "./Voting";
 import Welcome from "./Welcome";
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
       <MeetParticipants />
       <Challenges />
       <ParentsInteraction />
+      <Prizes />
+      <Voting />
     </Fragment>
   );
 };
