@@ -1,4 +1,8 @@
 const styles = {
+  wrapper: {
+    height: "min-content",
+  },
+
   container: {
     display: "flex",
     flexDirection: "column",
@@ -19,6 +23,23 @@ const styles = {
     fontSize: "16px",
     fontWeight: 300,
     textAlign: "center",
+  },
+
+  cardWrapper: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+
+  card: {
+    width: "22%",
+  },
+
+  bottomText: {
+    fontSize: "16px",
+    textTransform: "capitalize",
+    letterSpacing: "1.5px",
+    textAlign: "center",
+    width: "60%",
   },
 };
 

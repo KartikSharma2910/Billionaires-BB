@@ -1,15 +1,11 @@
 import { Box } from "@mui/material";
 import { Card, Section } from "components/common";
+import { voting } from "constants/voting";
 import styles from "./styles";
 
 const Voting = () => {
   return (
-    <Section
-      heading="Voting"
-      customStyles={{
-        height: "min-content",
-      }}
-    >
+    <Section heading="Voting" customStyles={styles.wrapper}>
       <Box sx={styles.container}>
         <Box sx={{ ...styles.description, width: "80%" }}>
           Welcome to the Voting Section! Your vote can make all the difference
@@ -31,7 +27,21 @@ const Voting = () => {
             your vote before the deadline!
           </Box>
         </Box>
-        <Card as="VoteCard" />
+        <Box sx={styles.cardWrapper}>
+          {voting.map((vote, index) => (
+            <Card
+              as="VoteCard"
+              customStyles={styles.card}
+              key={index}
+              {...vote}
+            />
+          ))}
+        </Box>
+        <Box sx={styles.bottomText}>
+          Don't wait! Make your voice heard by casting your vote now. Let's
+          support our contestants and shape the outcome of the competition
+          together!
+        </Box>
       </Box>
     </Section>
   );

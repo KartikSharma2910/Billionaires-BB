@@ -1,47 +1,18 @@
 import { Box } from "@mui/material";
+import styles from "./styles";
 
-const VoteCard = () => {
+const VoteCard = ({ heading, description, customStyles }) => {
   return (
-    <Box
-      sx={{
-        width: "350px",
-        position: "relative",
-        backgroundColor: "rgba(51, 51, 51, 1)",
-      }}
-    >
-      <Box
-        sx={{
-          position: "relative",
-        }}
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            zIndex: 0,
-            top: "15%",
-            left: "10%",
-            width: "280px",
-            height: "280px",
-            border: "8px solid white",
-          }}
-        />
-        <Box
-          component="img"
-          src="/votingCard.png"
-          sx={{
-            position: "relative",
-            zIndex: 1,
-          }}
-        />
+    <Box sx={{ ...styles.wrapper, ...customStyles }}>
+      <Box sx={styles.imageWrapper}>
+        <Box sx={styles.backBox} />
+        <Box component="img" src="/votingCard.png" sx={styles.objectImage} />
+        <Box sx={styles.dataBox}>
+          <Box sx={styles.heading}>{heading}</Box>
+          <Box sx={styles.description}>{description}</Box>
+        </Box>
       </Box>
-      <Box
-        sx={{
-          height: "50px",
-          backgroundColor: "rgba(252, 163, 17, 1)",
-        }}
-      >
-        Vote Now
-      </Box>
+      <Box sx={styles.button}>Vote Now</Box>
     </Box>
   );
 };
