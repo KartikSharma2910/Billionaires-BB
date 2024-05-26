@@ -4,7 +4,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     fontSize: "40px",
-    letterSpacing: "1px",
+    letterSpacing: "3px",
     wordSpacing: "2px",
     fontWeight: "bold",
     height: "100px",
