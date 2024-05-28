@@ -1,11 +1,16 @@
 import { Box } from "@mui/material";
-import { Card, Section } from "components/common";
+import { Card, CustomTable, Section } from "components/common";
 import { challenges } from "constants/challenges";
 import styles from "./styles";
 
 const ChallengeVoyage = () => {
   return (
-    <Section heading="Challenge Voyage">
+    <Section
+      heading="Challenge Voyage"
+      customStyles={{
+        height: "min-content",
+      }}
+    >
       <Box
         sx={{
           padding: "20px 40px",
@@ -34,11 +39,14 @@ const ChallengeVoyage = () => {
         <Box
           sx={{
             width: "80%",
-            margin: "0 auto",
+            height: "100%",
+            margin: "2rem auto",
             borderRadius: "10px",
             border: "1px solid white",
           }}
-        ></Box>
+        >
+          <CustomTable />
+        </Box>
       </Box>
     </Section>
   );
