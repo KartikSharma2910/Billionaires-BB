@@ -43,6 +43,7 @@ const styles = {
 
   heading: {
     textAlign: "center",
+    color: "white",
     letterSpacing: "2px",
     fontWeight: 600,
     fontSize: "28px",

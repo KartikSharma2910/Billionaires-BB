@@ -1,6 +1,7 @@
 import { Header } from "components/common";
 import { Fragment } from "react";
 import Banner from "./Banner";
+import ChallengeVoyage from "./ChallengeVoyage";
 import DelhiChapter from "./DelhiChapter";
 import Participants from "./Participants";
 
@@ -11,6 +12,7 @@ const Grooms = () => {
       <Banner />
       <DelhiChapter />
       <Participants />
+      <ChallengeVoyage />
     </Fragment>
   );
 };
