@@ -7,6 +7,7 @@ import ChallengeVoyage from "./ChallengeVoyage";
 import DelhiChapter from "./DelhiChapter";
 import Participants from "./Participants";
 import StartVoting from "./StartVoting";
+import Spotlight from "./Spotlight";
 
 const Grooms = () => {
   return (
@@ -19,6 +20,7 @@ const Grooms = () => {
       <AdventureUnveiled />
       <Activities />
       <StartVoting />
+      <Spotlight />
     </Fragment>
   );
 };

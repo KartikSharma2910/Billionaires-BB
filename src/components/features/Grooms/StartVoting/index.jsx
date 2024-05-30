@@ -5,7 +5,12 @@ import styles from "./styles";
 
 const StartVoting = () => {
   return (
-    <Section heading="Start Voting">
+    <Section
+      heading="Start Voting"
+      customStyles={{
+        height: "min-content",
+      }}
+    >
       <Box sx={styles.container}>
         <Box sx={styles.cardWrapper}>
           {voting.map((vote, index) => (
