@@ -1,7 +1,14 @@
-import React from "react";
+import { Fragment } from "react";
+import Banner from "./Banner";
+import Contact from "./Contact";
 
 const ContactUs = () => {
-  return <div>ContactUs</div>;
+  return (
+    <Fragment>
+      <Banner />
+      <Contact />
+    </Fragment>
+  );
 };
 
 export default ContactUs;

@@ -1,6 +1,7 @@
 import FeatureCard from "./FeatureCard";
 import ParticipantsCard from "./ParticipantsCard";
 import TaskCard from "./TaskCard";
+import VideoCard from "./VideoCard";
 import VoteCard from "./VoteCard";
 
 const CardTypeMapping = {
@@ -8,6 +9,7 @@ const CardTypeMapping = {
   VoteCard,
   FeatureCard,
   ParticipantsCard,
+  VideoCard,
 };
 
 const defaultCardType = "TaskCard";

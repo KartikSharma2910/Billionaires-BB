@@ -1,3 +1,4 @@
+import { Error } from "components/features";
 import routes from "constants/routes";
 import Layout from "layout";
 import { Route, Routes } from "react-router-dom";
@@ -16,6 +17,7 @@ const AppRouter = () => {
           }
         />
       ))}
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 };

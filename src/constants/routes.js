@@ -1,6 +1,5 @@
 import {
   ContactUs,
-  Error,
   Groom,
   Grooms,
   Home,
@@ -32,10 +31,6 @@ const routes = [
   {
     path: "/contact-us",
     element: ContactUs,
-  },
-  {
-    path: "*",
-    element: Error,
   },
 ];
 

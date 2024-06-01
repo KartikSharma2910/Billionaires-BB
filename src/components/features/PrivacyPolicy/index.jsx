@@ -1,7 +1,14 @@
-import React from "react";
+import { Fragment } from "react";
+import Banner from "./Banner";
+import Privacy from "./Privacy";
 
 const PrivacyPolicy = () => {
-  return <div>PrivacyPolicy</div>;
+  return (
+    <Fragment>
+      <Banner />
+      <Privacy />
+    </Fragment>
+  );
 };
 
 export default PrivacyPolicy;
