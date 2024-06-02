@@ -2,11 +2,13 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { Box } from "@mui/material";
+import { Box, Modal } from "@mui/material";
 import { Button, Section } from "components/common";
+import { useState } from "react";
 import styles from "./styles";
 
 const Welcome = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Section heading="Welcome to Billionaires Bridemaid">
       <Box sx={styles.wrapper}>
@@ -32,6 +34,7 @@ const Welcome = () => {
           <Button
             as="GradientButton"
             label="Learn More"
+            onClick={() => setOpen(true)}
             customStyles={styles.button}
           />
           <Box sx={styles.iconWrapper}>
@@ -45,6 +48,46 @@ const Welcome = () => {
           <Box component="img" src="/homeWelcome.png" sx={styles.image} />
         </Box>
       </Box>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        sx={styles.mainModal}
+        disableAutoFocus
+        disableEnforceFocus
+        disableRestoreFocus
+      >
+        <Box sx={styles.modal}>
+          <Box sx={styles.modalContainer}>
+            <Box sx={styles.modalHeader}>
+              <Box sx={styles.modalHeading}>Billionaires Bridesmaid</Box>
+              <Box sx={styles.modalDescription}>Who is registering ?</Box>
+            </Box>
+            <Box sx={styles.modalPhotos}>
+              <Box sx={styles.modalImageContainer}>
+                <Box
+                  component="img"
+                  src="/theGroom.png"
+                  sx={styles.modalImage}
+                />
+                <Box sx={styles.modalText}>The Groom</Box>
+              </Box>
+              <Box sx={styles.modalImageContainer}>
+                <Box
+                  component="img"
+                  src="/theBride.png"
+                  sx={styles.modalImage}
+                />
+                <Box sx={styles.modalText}>The Bride</Box>
+              </Box>
+            </Box>
+            <Button
+              as="GradientButton"
+              label="Next"
+              customStyles={styles.modalButton}
+            />
+          </Box>
+        </Box>
+      </Modal>
     </Section>
   );
 };

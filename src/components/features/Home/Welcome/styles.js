@@ -55,6 +55,89 @@ const styles = {
     display: "flex",
     gap: "15px",
   },
+
+  mainModal: {
+    "& .MuiModal-root": {
+      borderRadius: "20px",
+    },
+
+    "& .MuiModal-backdrop": {
+      backdropFilter: "blur(10px)",
+    },
+  },
+
+  modal: {
+    position: "absolute",
+    color: "white",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 800,
+    bgcolor: "black",
+    boxShadow: 24,
+  },
+
+  modalContainer: {
+    display: "flex",
+    padding: "40px",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "40px",
+  },
+
+  modalHeader: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "12px",
+  },
+
+  modalHeading: {
+    fontSize: "14px",
+    fontWeight: 300,
+    letterSpacing: "4px",
+    textTransform: "uppercase",
+  },
+
+  modalDescription: {
+    letterSpacing: "2px",
+    fontWeight: 500,
+    fontSize: "22px",
+  },
+
+  modalPhotos: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "12px",
+    alignItems: "center",
+  },
+
+  modalImageContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "12px",
+    alignItems: "center",
+    border: "1px solid rgba(255, 255, 255, 0.15)",
+  },
+
+  modalImage: {
+    width: "180px",
+    cursor: "pointer",
+    objectFit: "cover",
+  },
+
+  modalText: {
+    fontSize: "12px",
+    fontWeight: 300,
+    letterSpacing: "4px",
+    textTransform: "uppercase",
+  },
+
+  modalButton: {
+    width: "80%",
+  },
 };
 
 export default styles;
