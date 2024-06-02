@@ -116,9 +116,9 @@ theme = createTheme(theme, {
           position: "relative",
           borderWidth: 1,
           border: "none",
-          borderStyle: "solid",
           color: "white",
-          borderColor: "rgba(203, 29, 246, 0.6)",
+          background:
+            "linear-gradient(90.25deg, rgba(192, 178, 178, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%)",
           fontSize: "12px",
           padding: "10px 12px",
           [theme.breakpoints.down("sm")]: {
@@ -126,10 +126,13 @@ theme = createTheme(theme, {
             height: "40px",
           },
           "&.Mui-error": {
+            border: "1px solid",
             borderColor: theme.palette.error.main,
           },
           "&.Mui-focused": {
-            borderColor: "rgba(203, 29, 246, 0.6)",
+            border: "none",
+            background:
+              "linear-gradient(90.25deg, rgba(192, 178, 178, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%)",
           },
           "& input.Mui-disabled": {
             cursor: "not-allowed",
